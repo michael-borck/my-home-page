@@ -1,0 +1,134 @@
+
+Skip to main content
+
+M365 Copilot
+
+
+Chat
+Agents
+
+
+Researcher
+
+
+
+
+Analyst
+
+
+
+
+Enrolment Compliance Checker
+
+
+
+All agents
+
+Create agent
+
+Conversations
+
+
+
+
+
+
+All conversations
+Pages
+MB
+Michael Borck
+
+
+File Attachment Missing for Hands-on-AI Query
+Work
+Web
+Try GPT-5
+
+
+
+Today
+You said:
+
+Please read the attached file.  I need to ask some question about the hands-on-ai package.  Where you haved read and understood.  Please respond "Read, how can I help".  I will ask some cquestion
+Copilot said:
+Copilot
+Analysis
+It looks like no file was attached, so I couldn’t read anything yet. Could you please upload the file? Once I have it, I’ll review the contents and respond with “Read, how can I help” as requested.
+
+
+
+
+
+
+
+
+
+txt
+LLM
+You said:
+
+Oppss... hee is the fiile
+Copilot said:
+Copilot
+Read, how can I help?
+
+txt
+LLM
+
+https://curtin-my.sharepoint.com/personal/211934g_curtin_edu_au/Documents/Microsoft Copilot Chat Files/LLM.txt
+Michael Borck modified 8 hours ago
+
+Ask
+Sources
+
+
+
+
+
+
+
+You said:
+
+Please write the minimal program using RAG
+Copilot said:
+Copilot
+Here is a minimal Python program using the RAG (Retrieval-Augmented Generation) module from the hands-on-ai package, based on the reference guide you provided:
+
+
+
+
+Python
+from hands_on_ai.rag import index_documents, query_documents
+# Step 1: Index your documents (only needs to be done once per document set)
+index_path = index_documents("path/to/docs/", output_file="my_index.npz")
+
+# Step 2: Query the indexed documents
+response = query_documents("What is machine learning?", index_path=index_path)
+print(response)
+How it works:
+
+index_documents creates a vector index from your documents (e.g., PDFs, text files, etc.).
+query_documents lets you ask questions about the indexed content, and the LLM will answer using retrieved context.
+Minimal requirements:
+
+Replace "path/to/docs/" with the folder containing your documents.
+The index is saved as "my_index.npz" (you can change this name).
+You can now ask any question about your documents.
+Would you like an example using specific file types or a CLI (command-line) version?
+
+
+
+
+
+
+
+
+
+Provide CLI usage example
+
+Explain how to customize the index path
+Message Copilot
+
+
+
+AI-generated content may be incorrect
